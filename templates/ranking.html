@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}Ranking público{% endblock %}{% block content %}<section class="panel"><div class="table">{% for u in users %}<div><span>#{{ loop.index }}</span><span>{{ u.id }}</span><span>{{ u.money }} moedas</span><span>{{ u.xp }} XP</span></div>{% else %}<p>Nenhum usuário salvo ainda.</p>{% endfor %}</div></section>{% endblock %}

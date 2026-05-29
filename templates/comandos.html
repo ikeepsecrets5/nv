@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}Comandos{% endblock %}{% block content %}<section class="commandgrid">{% for group,name,desc in comandos %}<article><span>{{ group }}</span><b>{{ name }}</b><p>{{ desc }}</p></article>{% endfor %}</section>{% endblock %}
